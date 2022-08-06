@@ -1,0 +1,61 @@
+@media screen and (max-width:1500px) {
+    .close-btn ion-icon {
+        right: 130px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .row {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .close-btn ion-icon {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-process-container,
+    .grid-portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .close-btn ion-icon {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-about-container {
+        grid-template-columns: 1fr;
+    }
+    .momin {
+        width: 70%;
+        height: 90%;
+    }
+    .grid-about-item,
+    .description {
+        text-align: center;
+    }
+    .close-btn ion-icon {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html,
+    body {
+        font-size: 8px;
+    }
+    .momin {
+        width: 90%;
+    }
+    .grid-process-container,
+    .grid-experience-container,
+    .grid-testimonial-container,
+    .grid-contact-container {
+        grid-template-columns: 1fr;
+    }
+    .close-btn ion-icon {
+        right: 50px;
+    }
+}

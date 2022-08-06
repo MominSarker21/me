@@ -1,0 +1,590 @@
+/*==========================================================Template Name : paul Lapkin - Portfolio Template Template URL : Description : An Awesome Portfolio Template Author : Md. Momin Sarker Author URL : Support : mominsarker21@gmail.com Version : 1.0==========================================================*/
+
+/*==========================================================CSS Index================1. Common Css 2. Reuseable Component 3. Hero Section 4. About Section 5. Process Section 6. Exprience Section 7. Portfolio 8. Testimonial Section 9. Contact Section 10. Footer Section==========================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+/*font-family: 'Raleway', sans-serif;font-family: 'Roboto', sans-serif;*/
+
+/*=====x=====x=====x=====x=====x=====x=====x=====x=====x=====x 1.Common Css=====x=====x=====x=====x=====x=====x=====x=====x=====x======*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 650%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 400%;
+    color: rgb(255, 132, 0);
+}
+
+h3 {
+    font-size: 260%;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+h4 {
+    font-size: 160%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.btn:link,
+.btn:visited,
+.btn {
+    width: 203px;
+    background: #ff2b4a;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 160%;
+    padding: 10px 0;
+    border: 2px solid #ff2b4a;
+    margin-top: 30px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+    background: transparent;
+    color: #ff2b4a;
+}
+
+.about-cta-btn,
+.single-form-btn {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    text-align: center;
+}
+
+/*=====x=====x=====x=====x=====x=====x=====x=====x=====x=====x 2.Reuseable Component=====x=====x=====x=====x=====x=====x=====x=====x=====x======*/
+
+.row {
+    width: 1180px;
+    margin: auto;
+}
+
+section {
+    padding: 120px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title p {
+    font-size: 160%;
+    color: #6f6f6f;
+}
+
+/*=====x=====x=====x=====x=====x=====x=====x=====x=====x=====x 3.Hero Section=====x=====x=====x=====x=====x=====x=====x=====x=====x======*/
+
+#hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.176), rgba(0, 0, 0, 0.769)), url(img/hero-bg.jpg) no-repeat center/cover;
+}
+
+.logo {
+    float: left;
+    height: 150px;
+}
+
+.nav-icon {
+    color: #fff;
+    float: right;
+}
+
+.nav-icon:hover {
+    color: #fff;
+}
+
+.nav-icon ion-icon {
+    font-size: 400%;
+    margin-top: 55px;
+    margin-right: 20px;
+    border: 1px solid #fff;
+}
+
+nav.uk-sticky-fixed {
+    background: rgba(0, 0, 0, 0.732);
+}
+
+nav.uk-sticky-fixed .logo {
+    height: 80px;
+}
+
+nav.uk-sticky-fixed .nav-icon ion-icon {
+    margin-top: 20px;
+}
+
+.hero-text-box {
+    width: 1180px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text-box span {
+    font-size: 290%;
+    color: #fff;
+    display: inline-block;
+}
+
+h1::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+}
+
+.scroll-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    margin: auto;
+    width: 52px;
+}
+
+.scroll-down a ion-icon {
+    color: #fff;
+    font-size: 500%;
+    position: relative;
+    -webkit-animation: 2s arrow infinite ease;
+    animation: 2s arrow infinite ease;
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        top: 10px;
+    }
+    50% {
+        top: 30px;
+    }
+    100% {
+        top: 10px;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        top: 10px;
+    }
+    50% {
+        top: 30px;
+    }
+    100% {
+        top: 10px;
+    }
+}
+
+/*Hamburder menu*/
+
+.menu-container {
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.close-btn ion-icon {
+    color: #fff;
+    font-size: 400%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 55px;
+    right: 380px;
+}
+
+.close-btn:hover ion-icon {
+    cursor: pointer;
+}
+
+.menu-item {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item ul li {
+    margin: 15px 0;
+}
+
+.menu-item ul li a {
+    color: #fff;
+    font-size: 300%;
+    text-transform: uppercase;
+    transition: .3s;
+    display: block;
+}
+
+.menu-item ul li:hover a {
+    color: #ff2b4a;
+    font-size: 320%;
+}
+
+/*=====x=====x=====x=====x=====x=====x=====x=====x=====x=====x 4.About Section=====x=====x=====x=====x=====x=====x=====x=====x=====x======*/
+
+.grid-about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 60px;
+}
+
+.grid-about-item p {
+    text-align: center;
+}
+
+.momin {
+    margin: auto;
+    display: block;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    width: 350px;
+    height: 350px;
+}
+
+.intro {
+    font-size: 180%;
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+.description {
+    font-size: 160%;
+    color: #222;
+    width: 90%;
+    text-align: justify;
+    display: inline;
+}
+
+/*=====x=====x=====x=====x=====x=====x=====x=====x=====x=====x 5.Process Section=====x=====x=====x=====x=====x=====x=====x=====x=====x======*/
+
+#process {
+    background: #f6f6f6;
+}
+
+.grid-process-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.grid-process-container h4 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.grid-process-item {
+    padding: 80px 0;
+}
+
+.grid-process-item:nth-child(1) {
+    background: #6ab04c;
+}
+
+.grid-process-item:nth-child(2) {
+    background: #f1c40f;
+}
+
+.grid-process-item:nth-child(3) {
+    background: #EE5A24;
+}
+
+.grid-process-item:nth-child(4) {
+    background: #1abc9c;
+}
+
+.grid-process-item ion-icon {
+    font-size: 400%;
+    margin-bottom: 30px;
+}
+
+/*=====x=====x=====x=====x=====x=====x=====x=====x=====x=====x 6.Experience Section=====x=====x=====x=====x=====x=====x=====x=====x=====x======*/
+
+#experience {
+    background: linear-gradient(rgba(0, 0, 0, 0.338), rgba(0, 0, 0, 0)), url(img/experience-bg.jpg) no-repeat center/cover;
+    color: #fff;
+}
+
+.grid-experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid-designer-experience-items,
+.grid-security-experience-items {
+    background: rgb(0, 0, 0, 0.7);
+    padding: 45px 30px;
+}
+
+.job h4 {
+    font-size: 180%;
+    color: #fff;
+}
+
+.job span {
+    font-size: 160%;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.job p {
+    font-size: 160%;
+    margin-top: 0;
+}
+
+#experience hr {
+    border: none;
+    border: 1px solid #fff;
+    margin: 30px 0;
+}
+
+/*=====x=====x=====x=====x=====x=====x=====x=====x=====x=====x 7.Portfolio Section=====x=====x=====x=====x=====x=====x=====x=====x=====x======*/
+
+.grid-portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(250px, auto);
+}
+
+.portfolio-filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-filter button {
+    padding: 5px 10px;
+    font-size: 160%;
+    border: 1px solid #000;
+    color: #fff;
+    background: #000;
+    transition: .5s;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.portfolio-filter button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.portfolio-filter .mixitup-control-active {
+    background: rgb(255, 94, 0);
+}
+
+.grid-portfolio-items img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+}
+
+.grid-portfolio-items:nth-child(5) {
+    grid-column: 1/3;
+}
+
+/*=====x=====x=====x=====x=====x=====x=====x=====x=====x=====x 8.Testimonial Section=====x=====x=====x=====x=====x=====x=====x=====x=====x======*/
+
+#testimonial {
+    background: url(img/testimonial-bg.jpg) no-repeat center/cover;
+}
+
+.grid-testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.quote {
+    height: 45px;
+}
+
+#testimonial p {
+    margin: 45px 0;
+    font-size: 160%;
+}
+
+.signature img {
+    height: 45px;
+}
+
+.signature {
+    margin-bottom: 30px;
+}
+
+#testimonial span {
+    font-size: 140%;
+}
+
+/*=====x=====x=====x=====x=====x=====x=====x=====x=====x=====x 9.Contact Section=====x=====x=====x=====x=====x=====x=====x=====x=====x======*/
+
+#contact {
+    background: url(img/contact-bg.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+.grid-contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid-contact-items:nth-child(1) {
+    background: rgba(0, 0, 0, 0.636);
+    padding: 30px 45px;
+}
+
+.single-form input[type="text"],
+.single-form input[type="email"],
+.single-form textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgb(178, 178, 178);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 140%;
+    margin: 10px;
+}
+
+.single-form-btn {
+    text-align: right;
+}
+
+.nested-grid-contact-continer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.nested-grid-contact-items {
+    background: rgba(0, 0, 0, 0.623);
+    color: #fff;
+    padding: 30px 45px;
+}
+
+.nested-grid-contact-items p {
+    font-size: 140%;
+}
+
+/*=====x=====x=====x=====x=====x=====x=====x=====x=====x=====x 10.Footer Section=====x=====x=====x=====x=====x=====x=====x=====x=====x======*/
+
+footer {
+    background: #222;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+.social-icons ul li {
+    display: inline-block;
+}
+
+.social-icons ul li a ion-icon {
+    color: #fff;
+    font-size: 200%;
+    border-right: 1px solid #fff;
+    padding: 0 10px;
+}
+
+.social-icons ul li:hover a ion-icon {
+    background: #ff2b4a;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 120%;
+}
+
+.totop {
+    margin-top: 25px;
+}
+
+.totop .uk-totop {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 5px;
+    transition: .5s;
+}
+
+.totop .uk-totop:hover {
+    background: #fff;
+    color: #000;
+}
